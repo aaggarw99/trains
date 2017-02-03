@@ -1,5 +1,6 @@
 var startTime = new Date().getTime();
 var rightSources = ['images/no_lights_right.svg', 'images/right_light_right.svg', "images/left_light_right.svg"];
+var leftSources = ['images/no_lights_left.svg', 'images/right_light_left.svg', "images/left_light_left.svg"];
 var secIndex = 1;
 
 function runAnimation(){
