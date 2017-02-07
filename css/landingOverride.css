@@ -1,5 +1,6 @@
 body {
 	overflow-y: none;
+	background-image: url("images/background_road.jpg");
 }
 
 #rightGate{
