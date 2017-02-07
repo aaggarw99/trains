@@ -50,3 +50,13 @@ body {
         transform: rotate(0deg);
     }
 }
+<<<<<<< HEAD
+=======
+
+.train{
+    position: absolute;
+    top:-55%;
+    width: 400%;
+    height:400%;
+}
+>>>>>>> cafbbb131153c76bd99651f5f534d826d87f05bb
