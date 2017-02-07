@@ -1,3 +1,7 @@
+body {
+	overflow-y: none;
+}
+
 #rightGate{
 	position: absolute;
 	top:0;
