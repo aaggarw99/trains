@@ -1,6 +1,7 @@
 #rightGate{
 	position: absolute;
 	top:0;
+    left:0;
 	-moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -15,6 +16,7 @@
 #leftGate{
     position: absolute;
     top:0;
+    left:0;
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
