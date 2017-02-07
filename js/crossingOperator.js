@@ -17,6 +17,8 @@ function runAnimation(){
 		
 		rightCrossing.src="images/no_lights_right.svg";*/
 	var timerid=window.setInterval(changeImage, 500);
+	//var gateDown=window.setTimeout(gatesDown, 0);
+	//var gateUp=window.setTimeout(gatesUp, 10000);
 	var endFlashers=window.setTimeout(function(){clearInterval(timerid); secIndex=0; document.getElementById('rightCrossing').src=rightSources[secIndex]}, 10000);
 
 
@@ -35,7 +37,7 @@ function changeImage(){
 	
 }
 
-function stopFlashers(){
+function gatesDown(){
 
 
 }

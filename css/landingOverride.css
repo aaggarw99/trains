@@ -1,4 +1,45 @@
-.crossingGate{
+#rightGate{
 	position: absolute;
 	top:0;
+	-moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transform-origin: 93.33% 30%;
+    -ms-transform-origin: 93.33% 30%;
+    -webkit-transform-origin: 93.33% 30%;
+    transform-origin: 93.33% 30%;
+    animation: moveRightGate 2s linear;
+}
+
+#leftGate{
+    position: absolute;
+    top:0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transform-origin: 6.66% 30%;
+    -ms-transform-origin: 6.66% 30%;
+    -webkit-transform-origin: 6.66% 30%;
+    transform-origin: 6.66% 30%;
+    animation: moveLeftGate 2s linear;
+}
+
+@keyframes moveLeftGate{
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moveRightGate{
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
