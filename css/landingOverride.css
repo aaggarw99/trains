@@ -1,5 +1,5 @@
 body {
-	overflow-y: none;
+	overflow-y: hidden;
 	background-image: url("../images/background_road.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 -moz-background-size: cover;
