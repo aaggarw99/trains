@@ -17,9 +17,9 @@ function runAnimation(){
 		
 		rightCrossing.src="images/no_lights_right.svg";*/
 	var timerid=window.setInterval(changeImage, 500);
-	//var gateDown=window.setTimeout(gatesDown, 0);
-	//var gateUp=window.setTimeout(gatesUp, 10000);
+	var gateUp=window.setTimeout(gatesUp, 10000);
 	var endFlashers=window.setTimeout(function(){clearInterval(timerid); secIndex=0; document.getElementById('rightCrossing').src=rightSources[secIndex]}, 10000);
+	var trainPass = window.setTimeout(activateTrain, 4000);
 
 
 
@@ -37,7 +37,24 @@ function changeImage(){
 	
 }
 
-function gatesDown(){
+function gatesUp(){
+	var rightGate = document.getElementById('rightGate');
+	$(rightGate).css("animation", "rightGateUp 2s linear");
+	$(rightGate).css("transform", "rotate(90deg)");
+	$(rightGate).css("-moz-transform", "rotate(90deg)");
+	$(rightGate).css("-ms-transform", "rotate(90deg)");
+	$(rightGate).css("-webkit-transform", "rotate(90deg)");
 
+	var leftGate = document.getElementById('leftGate');
+	$(leftGate).css("animation", "leftGateUp 2s linear");
+	$(leftGate).css("transform", "rotate(-90deg)");
+	$(leftGate).css("-moz-transform", "rotate(-90deg)");
+	$(leftGate).css("-ms-transform", "rotate(-90deg)");
+	$(leftGate).css("-webkit-transform", "rotate(-90deg)");
 
+}
+
+function activateTrain(){
+	var train = document.getElementById("bulletTrain");
+	$(train).css("animation", "moveTrain 3s linear");
 }

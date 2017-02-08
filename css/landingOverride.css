@@ -11,7 +11,7 @@ background-size: cover;
 #rightGate{
 	position: absolute;
 	top:0;
-    left:0;
+    left:1.5%;
 	-moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -47,6 +47,15 @@ background-size: cover;
     }
 }
 
+@keyframes leftGateUp{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
 @keyframes moveRightGate{
     0% {
         transform: rotate(90deg);
@@ -56,10 +65,27 @@ background-size: cover;
     }
 }
 
+@keyframes rightGateUp{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
 .train{
     position: absolute;
-    top:-55%;
-    width: 400%;
-    height:400%;
+    top:-135%;
+    left:120%;
+    z-index: -5000;
+    width: 550%;
+    height:550%;
+    animation: none;
+}
+
+@keyframes moveTrain{
+    0%{left:120%;}
+    100%{left:-850%;}
 }
 
