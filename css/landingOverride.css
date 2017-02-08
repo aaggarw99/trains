@@ -1,5 +1,6 @@
 body {
 	overflow-y: hidden;
+    overflow-x: hidden;
 	background: url("../images/background_road.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 -moz-background-size: cover;
@@ -54,8 +55,6 @@ background-size: cover;
         transform: rotate(0deg);
     }
 }
-<<<<<<< HEAD
-=======
 
 .train{
     position: absolute;
@@ -63,4 +62,4 @@ background-size: cover;
     width: 400%;
     height:400%;
 }
->>>>>>> cafbbb131153c76bd99651f5f534d826d87f05bb
+
