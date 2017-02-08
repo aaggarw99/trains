@@ -1,6 +1,10 @@
 body {
 	overflow-y: none;
-	background-image: url("../images/background_road.jpg");
+	background-image: url("../images/background_road.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 #rightGate{
