@@ -4,6 +4,7 @@ var leftSources = ['images/no_lights_left.svg', 'images/right_light_left.svg', "
 var secIndex = 1;
 
 function runAnimation(){
+
 	
 	/*	var lastSwitch = new Date().getTime();
 		var rightCrossing = document.getElementById('rightCrossing');
@@ -16,15 +17,20 @@ function runAnimation(){
 			while(new Date().getTime()-lightTimer < 1000){}
 		
 		rightCrossing.src="images/no_lights_right.svg";*/
-	var timerid=window.setInterval(changeImage, 500);
-	var gateUp=window.setTimeout(gatesUp, 10000);
-	var endFlashers=window.setTimeout(function(){clearInterval(timerid); secIndex=0; document.getElementById('rightCrossing').src=rightSources[secIndex]}, 10000);
-	var trainPass = window.setTimeout(activateTrain, 4000);
+	var timerid=window.setTimeout(imageChanger, 2000);
+	var gateUp=window.setTimeout(gatesUp, 12000);
+	
+	var trainPass = window.setTimeout(activateTrain, 6000);
 
 
 
 	
 
+}
+
+function imageChanger() {
+	var flasher = window.setInterval(changeImage, 500);
+	var endFlashers=window.setTimeout(function(){clearInterval(flasher); secIndex=0; document.getElementById('rightCrossing').src=rightSources[secIndex]}, 12000);
 }
 
 function changeImage(){
