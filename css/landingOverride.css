@@ -20,7 +20,7 @@ body {
     -ms-transform-origin: 93.33% 30%;
     -webkit-transform-origin: 93.33% 30%;
     transform-origin: 93.33% 30%;
-    animation: moveRightGate 2s linear;
+    animation: moveRightGate 4s linear;
 }
 
 #leftGate{
@@ -35,11 +35,14 @@ body {
     -ms-transform-origin: 6.66% 30%;
     -webkit-transform-origin: 6.66% 30%;
     transform-origin: 6.66% 30%;
-    animation: moveLeftGate 2s linear;
+    animation: moveLeftGate 4s linear;
 }
 
 @keyframes moveLeftGate{
     0% {
+        transform: rotate(-90deg);
+    }
+    50% {
         transform: rotate(-90deg);
     }
     100% {
@@ -58,6 +61,9 @@ body {
 
 @keyframes moveRightGate{
     0% {
+        transform: rotate(90deg);
+    }
+    50% {
         transform: rotate(90deg);
     }
     100% {
