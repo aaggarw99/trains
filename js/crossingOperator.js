@@ -4,13 +4,7 @@ var leftSources = ['images/no_lights_left.svg', 'images/right_light_left.svg', "
 var secIndex = 1;
 
 function runAnimation(){
-	var audio = new Audio('train_sound.mp3')
-	$(document).ready(function() {
-	  setTimeout(function() {
-			audio.play()
-	  }, 2000);
 
-	});
 
 	/*	var lastSwitch = new Date().getTime();
 		var rightCrossing = document.getElementById('rightCrossing');
@@ -36,6 +30,8 @@ function runAnimation(){
 function imageChanger() {
 	var flasher = window.setInterval(changeImage, 500);
 	var endFlashers=window.setTimeout(function(){clearInterval(flasher); secIndex=0; document.getElementById('rightCrossing').src=rightSources[secIndex]}, 12000);
+	var audio = new Audio('train_sound.mp3')
+	audio.play()
 }
 
 function changeImage(){
