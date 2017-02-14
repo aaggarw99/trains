@@ -13,7 +13,7 @@ function runAnimation(){
 	    setTimeout(function(){
 	        audio.pause();
 	        audio.currentTime = 0;
-	    }, 10000);
+	    }, 12000);
 	}, 2000);
 
 	var gateUp=window.setTimeout(gatesUp, 12000);
