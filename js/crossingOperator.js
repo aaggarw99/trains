@@ -16,11 +16,11 @@ function runAnimation(){
 	    }, 12000);
 	}, 2000);
 	setTimeout(function(){
-			audio.play();
+			audioTrain.play();
 
 			setTimeout(function(){
-					audio.pause();
-					audio.currentTime = 0;
+					audioTrain.pause();
+					audioTrain.currentTime = 0;
 			}, 6000);
 	}, 6000);
 
