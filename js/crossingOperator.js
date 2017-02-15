@@ -3,7 +3,7 @@ var rightSources = ['images/no_lights_right.svg', 'images/right_light_right.svg'
 var leftSources = ['images/no_lights_left.svg', 'images/right_light_left.svg', "images/left_light_left.svg"];
 var secIndex = 1;
 var audio = new Audio('train_sound.mp3')
-
+var audioTrain = new Audio('trainpassing.mp3')
 
 function runAnimation(){
 	var timerid=window.setTimeout(imageChanger, 2000);
@@ -15,6 +15,16 @@ function runAnimation(){
 	        audio.currentTime = 0;
 	    }, 12000);
 	}, 2000);
+	setTimeout(function(){
+			audio.play();
+
+			setTimeout(function(){
+					audio.pause();
+					audio.currentTime = 0;
+			}, 6000);
+	}, 6000);
+
+
 
 	var gateUp=window.setTimeout(gatesUp, 12000);
 
