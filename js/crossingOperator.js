@@ -27,9 +27,6 @@ function runAnimation(){
 
 
 	var gateUp=window.setTimeout(gatesUp, 12000);
-	var audio = new Audio('train_sound.mp3');
-	audio.play();
-	var audiostopper=window.setTimeout(function(){audio.stop();}, 10000);
 
 	var trainPass = window.setTimeout(activateTrain, 6000);
 
