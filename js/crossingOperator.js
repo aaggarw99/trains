@@ -18,6 +18,9 @@ function runAnimation(){
 		rightCrossing.src="images/no_lights_right.svg";*/
 	var timerid=window.setTimeout(imageChanger, 2000);
 	var gateUp=window.setTimeout(gatesUp, 12000);
+	var audio = new Audio('train_sound.mp3');
+	audio.play();
+	var audiostopper=window.setTimeout(function(){audio.stop();}, 10000);
 
 	var trainPass = window.setTimeout(activateTrain, 6000);
 
@@ -30,8 +33,7 @@ function runAnimation(){
 function imageChanger() {
 	var flasher = window.setInterval(changeImage, 500);
 	var endFlashers=window.setTimeout(function(){clearInterval(flasher); secIndex=0; document.getElementById('rightCrossing').src=rightSources[secIndex]}, 12000);
-	var audio = new Audio('train_sound.mp3')
-	audio.play()
+
 }
 
 function changeImage(){
