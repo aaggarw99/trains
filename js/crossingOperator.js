@@ -2,21 +2,30 @@ var startTime = new Date().getTime();
 var rightSources = ['images/no_lights_right.svg', 'images/right_light_right.svg', "images/left_light_right.svg"];
 var leftSources = ['images/no_lights_left.svg', 'images/right_light_left.svg', "images/left_light_left.svg"];
 var secIndex = 1;
+var audio = new Audio('train_sound.mp3')
+var audioTrain = new Audio('trainpassing.mp3')
 
 function runAnimation(){
-
-
-	/*	var lastSwitch = new Date().getTime();
-		var rightCrossing = document.getElementById('rightCrossing');
-		while(new Date().getTime()-lastSwitch<1000){}
-			var lightTimer = new Date().getTime();
-			rightCrossing.src="images/right_light_right.svg";
-			while(new Date().getTime()-lightTimer < 500){}
-			rightCrossing.src="images/left_light_right.svg";
-			while(new Date().getTime()-lightTimer < 1000){}
-
-		rightCrossing.src="images/no_lights_right.svg";*/
 	var timerid=window.setTimeout(imageChanger, 2000);
+	setTimeout(function(){
+	    audio.play();
+
+	    setTimeout(function(){
+	        audio.pause();
+	        audio.currentTime = 0;
+	    }, 12000);
+	}, 2000);
+	setTimeout(function(){
+			audioTrain.play();
+
+			setTimeout(function(){
+					audioTrain.pause();
+					audioTrain.currentTime = 0;
+			}, 6000);
+	}, 6000);
+
+
+
 	var gateUp=window.setTimeout(gatesUp, 12000);
 	var audio = new Audio('train_sound.mp3');
 	audio.play();
