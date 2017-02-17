@@ -1,11 +1,25 @@
 body {
 	overflow-y: hidden;
     overflow-x: hidden;
-	background: url("../images/background_road_color.svg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: #6D6D6D;
+	/*background: url("../images/background_road_color.svg") no-repeat center center fixed;
     background-size: cover;
+    min-width: 2000px;*/
+}
+/*@media (){
+    body{
+        background-size: 2000px;
+    }
+}*/
+
+.background-image{
+    position: fixed;
+    top: -10%;
+    left: -5%;
+    min-width: 110%;
+    height: auto;
+    z-index: -1000000000;
+
 }
 
 #rightGate{
