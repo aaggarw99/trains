@@ -19,7 +19,8 @@ body {
     min-width: 110%;
     height: auto;
     z-index: -1000000000;
-
+		animation-delay: 12s;
+		animation: blurOut ease-in;
 }
 
 #rightGate{

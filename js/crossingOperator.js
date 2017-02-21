@@ -3,7 +3,7 @@ var rightSources = ['images/no_lights_right.svg', 'images/right_light_right.svg'
 var leftSources = ['images/no_lights_left.svg', 'images/right_light_left.svg', "images/left_light_left.svg"];
 var secIndex = 1;
 var audio = new Audio('audio/train_sound.mp3')
-var audioTrain = new Audio('audio/trainPassing.m4a')
+var audioTrain = new Audio('audio/trainpassing.mp3')
 
 function runAnimation(){
 	var timerid=window.setTimeout(imageChanger, 2000);
@@ -18,12 +18,16 @@ function runAnimation(){
 	setTimeout(function(){
 			audioTrain.play();
 
-			/*setTimeout(function(){
+			setTimeout(function(){
 					audioTrain.pause();
 					audioTrain.currentTime = 0;
-			}, 4000);*/
-	}, 4000);
+			}, 6000);
+	}, 6000);
 
+	setTimeout(function(){
+		blur()
+		showAlert()
+	}, 14000)
 
 
 	var gateUp=window.setTimeout(gatesUp, 12000);
@@ -72,4 +76,17 @@ function gatesUp(){
 function activateTrain(){
 	var train = document.getElementById("bulletTrain");
 	$(train).css("animation", "moveTrain 3s linear");
+}
+
+function blur() {
+	document.getElementById('background_image').style.filter = "blur(6px)"
+	document.getElementById('rightCrossing').style.filter = "blur(6px)"
+	document.getElementById('rightGate').style.filter = "blur(6px)"
+	document.getElementById('leftGate').style.filter = "blur(6px)"
+	document.getElementById('frontRail').style.filter = "blur(6px)"
+	document.getElementById('backRail').style.filter = "blur(6px)"
+}
+
+function showAlert() {
+	
 }
