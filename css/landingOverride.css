@@ -36,6 +36,8 @@ body {
     -webkit-transform-origin: 93.33% 30%;
     transform-origin: 93.33% 30%;
     animation: moveRightGate 4s linear;
+    z-index: 1;
+    transform: translateZ(3000px);
 }
 
 #leftGate{
@@ -51,6 +53,8 @@ body {
     -webkit-transform-origin: 6.66% 30%;
     transform-origin: 6.66% 30%;
     animation: moveLeftGate 4s linear;
+    z-index: 1;
+    transform: translateZ(3000px);
 }
 
 @keyframes moveLeftGate{
@@ -95,6 +99,11 @@ body {
     }
 }
 
+#rightCrossing{
+    transform: translateZ(2000px);
+    z-index: 0.5;
+}
+
 .train{
     position: absolute;
     top:-135%;
@@ -103,6 +112,7 @@ body {
     width: 550%;
     height:550%;
     animation: none;
+    transform: translateZ(1000px);
 }
 
 .rail{
@@ -115,7 +125,7 @@ body {
 }
 
 #backRail{
-    z-index: -6000;
+
     top:-134.25%;
 }
 

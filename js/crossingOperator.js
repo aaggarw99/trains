@@ -6,6 +6,10 @@ var audio = new Audio('audio/train_sound.mp3')
 var audioTrain = new Audio('audio/trainpassing.mp3')
 
 function runAnimation(){
+	if (navigator.appVersion.indexOf("Chrome/") != -1) {
+		var gate = document.getElementById('backRail');
+		$(gate).css("z-index", "-6000");
+	}
 	var timerid=window.setTimeout(imageChanger, 2000);
 	setTimeout(function(){
 	    audio.play();
