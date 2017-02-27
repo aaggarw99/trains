@@ -33,6 +33,11 @@ function runAnimation(){
 		showAlert()
 	}, 14000)
 
+	setTimeout(function(){
+		var button = document.getElementById('train-button');
+		button.style.display = 'block';
+	}, 14500)
+
 
 	var gateUp=window.setTimeout(gatesUp, 12000);
 
@@ -92,5 +97,5 @@ function blur() {
 }
 
 function showAlert() {
-	
+
 }

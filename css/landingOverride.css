@@ -133,3 +133,22 @@ body {
     0%{left:120%;}
     100%{left:-850%;}
 }
+
+#train-button {
+	display: none;
+	z-index: 100000;
+	background: #428BCA;
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 20px;
+  height: 60px;
+  width: 150px;
+  line-height: 60px;
+  margin: 25px 25px;
+  text-align: center;
+  border: 0;
+  transition: all 0.3s ease 0s;
+	margin-left: 42%;
+
+
+}
