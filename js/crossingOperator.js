@@ -3,7 +3,7 @@ var rightSources = ['images/no_lights_right.svg', 'images/right_light_right.svg'
 var leftSources = ['images/no_lights_left.svg', 'images/right_light_left.svg', "images/left_light_left.svg"];
 var secIndex = 1;
 var audio = new Audio('audio/train_sound.mp3')
-var audioTrain = new Audio('audio/trainpassing.mp3')
+var audioTrain = new Audio('audio/trainpassing.m4a')
 
 function runAnimation(){
 	if (navigator.appVersion.indexOf("Chrome/") != -1) {
@@ -25,8 +25,8 @@ function runAnimation(){
 			setTimeout(function(){
 					audioTrain.pause();
 					audioTrain.currentTime = 0;
-			}, 6000);
-	}, 6000);
+			}, 4500);
+	}, 3750);
 
 	setTimeout(function(){
 		blur()
