@@ -36,7 +36,8 @@ function runAnimation(){
 	setTimeout(function(){
 		var button = document.getElementById('train-button');
 		button.style.display = 'block';
-	}, 14500)
+		$(button).css("z-index", "5000000000000");
+	}, 15000)
 
 
 	var gateUp=window.setTimeout(gatesUp, 12000);
@@ -88,12 +89,12 @@ function activateTrain(){
 }
 
 function blur() {
-	document.getElementById('background_image').style.filter = "blur(6px)"
-	document.getElementById('rightCrossing').style.filter = "blur(6px)"
-	document.getElementById('rightGate').style.filter = "blur(6px)"
-	document.getElementById('leftGate').style.filter = "blur(6px)"
-	document.getElementById('frontRail').style.filter = "blur(6px)"
-	document.getElementById('backRail').style.filter = "blur(6px)"
+	document.getElementById('background_image').style.filter = "blur(10px)"
+	document.getElementById('rightCrossing').style.filter = "blur(10px)"
+	document.getElementById('rightGate').style.filter = "blur(10px)"
+	document.getElementById('leftGate').style.filter = "blur(10px)"
+	document.getElementById('frontRail').style.filter = "blur(10px)"
+	document.getElementById('backRail').style.filter = "blur(10px)"
 }
 
 function showAlert() {

@@ -23,6 +23,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="js/crossingOperator.js"></script>
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+    <script>
+      function redirect(){
+        window.location="main.html";
+      }
+    </script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,16 +48,14 @@
         <img class="train float-right" id="bulletTrain" src="images/trainGraphic.svg">
       </div>
 
-      <div id = "train-button">
-        <a href="#">Get Started</a>
-      </div>
+      
       <img class="crossingSign float-right" id="rightCrossing" src="images/no_lights_right.svg">
-
       <img class="crossingGate float-right" id="rightGate" src="images/right_gate.svg">
       <img class="crossingGate float-right" id="leftGate" src="images/left_gate.svg">
       <img class="rail float-right" id="backRail" src="images/BackRail.svg">
       <img class="rail float-right" id="frontRail" src="images/FrontRail.svg">
       <img class="background-image float-right" id="background_image" src="images/background_road_color.svg">
+      <button type="button" class="btn btn-secondary btn-lg" id="train-button" onClick="redirect()">Get Started</button>
     </div>
 
   </div>
