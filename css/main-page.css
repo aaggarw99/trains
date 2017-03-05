@@ -169,3 +169,7 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+#image_custom_border {
+  border: 2px solid black;
+  border-radius: 3%;
+}

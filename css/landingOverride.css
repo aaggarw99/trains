@@ -2,15 +2,9 @@ body {
 	overflow-y: hidden;
     overflow-x: hidden;
     background-color: #6D6D6D;
-	/*background: url("../images/background_road_color.svg") no-repeat center center fixed;
-    background-size: cover;
-    min-width: 2000px;*/
+
 }
-/*@media (){
-    body{
-        background-size: 2000px;
-    }
-}*/
+
 
 .background-image{
     position: fixed;
@@ -19,8 +13,6 @@ body {
     min-width: 110%;
     height: auto;
     z-index: -1000000000;
-		animation-delay: 12s;
-		animation: blurOut ease-in;
 }
 
 #rightGate{
@@ -139,8 +131,19 @@ body {
     height: 60px;
     display: none;
     transition: all 0.3s ease 0s;
-	margin-left: 45%;
+		margin-left: 43%;
     position: absolute;
     top: 25%;
 
+}
+
+@@keyframes blurView {
+	0% {
+		filter: blur(0px);
+		-webkit-filter: blur(0px)
+	}
+	100% {
+		filter: blur(10px);
+		-webkit-filter: blur(0px)
+	}
 }

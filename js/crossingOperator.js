@@ -35,7 +35,7 @@ function runAnimation(){
 
 	setTimeout(function(){
 		var button = document.getElementById('train-button');
-		button.style.display = 'block';
+		$(button).fadeIn()
 		$(button).css("z-index", "5000000000000");
 	}, 15000)
 
@@ -89,12 +89,33 @@ function activateTrain(){
 }
 
 function blur() {
-	document.getElementById('background_image').style.filter = "blur(10px)"
-	document.getElementById('rightCrossing').style.filter = "blur(10px)"
-	document.getElementById('rightGate').style.filter = "blur(10px)"
-	document.getElementById('leftGate').style.filter = "blur(10px)"
-	document.getElementById('frontRail').style.filter = "blur(10px)"
-	document.getElementById('backRail').style.filter = "blur(10px)"
+	var image = document.getElementById('background_image');
+	var rightC = document.getElementById('rightCrossing');
+	var rightG = document.getElementById('rightGate');
+	var leftG = document.getElementById('leftGate');
+	var frontR = document.getElementById('frontRail');
+	var backR = document.getElementById('backRail')
+	var total_images = [image, rightC, rightG, leftG, frontR, backR]
+
+	for (var i = 0; i < total_images.length; i++) {
+		total_images[i].animate([
+		  // keyframes
+		  { filter: 'blur(0px)' },
+		  { filter: 'blur(10px)' }
+			], {
+		  // timing options
+		  duration: 3000,
+			});
+	}
+
+	setTimeout(function(){
+		image.style.filter = "blur(10px)"
+		rightC.style.filter = "blur(10px)"
+		rightG.style.filter = "blur(10px)"
+		leftG.style.filter = "blur(10px)"
+		frontR.style.filter = "blur(10px)"
+		backR.style.filter = "blur(10px)"
+	}, 3000)
 }
 
 function showAlert() {
