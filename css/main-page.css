@@ -321,3 +321,23 @@ p.copyright {
     -webkit-transition: all 0.3s 0.6s ease-out;
         transition: all 0.3s 0.6s ease-out;
 }
+
+@keyframes bodyIn{
+    0%{
+        filter: blur(10px);
+        -webkit-filter: blur(10px)
+    }100%{
+        filter: blur(0px);
+        -webkit-filter: blur(0px)
+    }
+}
+
+@keyframes bodyOut{
+    0%{
+        filter: blur(0px);
+        -webkit-filter: blur(0px)
+    }100%{
+        filter: blur(10px);
+        -webkit-filter: blur(10px)
+    }
+}
