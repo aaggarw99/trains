@@ -12,6 +12,9 @@ function runAnimation(){
 	}
 	var timerid=window.setTimeout(imageChanger, 2000);
 	setTimeout(function(){
+		window.location="main.html";
+	}, 20000);
+	setTimeout(function(){
 	    audio.play();
 
 	    setTimeout(function(){
